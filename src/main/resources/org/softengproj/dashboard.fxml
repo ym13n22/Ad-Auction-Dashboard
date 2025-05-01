@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.softengproj.uicontroller.DashBoardController">
+   <center>
+      <VBox  fx:id="vbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="169.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="dashboard" mnemonicParsing="false" onAction="#dashboard" prefHeight="36.0" prefWidth="97.0" text="Dashboard">
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets></Button>
+            <Button fx:id="roles"  mnemonicParsing="false" text="Role Management" >
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="loadcampaign" mnemonicParsing="false" text="Load Campaign for Viewer">
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Log out">
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

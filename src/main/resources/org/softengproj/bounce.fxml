@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.softengproj.uicontroller.BounceController">
+   <children>
+      <Label layoutX="56.0" layoutY="41.0" text="Bounce Definition" />
+      <Label fx:id="bounceDefLabel" layoutX="218.0" layoutY="41.0" text="Time on Site" />
+      <TextField fx:id="bounceInput" layoutX="201.0" layoutY="64.0" onAction="#textChange" prefHeight="20.0" prefWidth="107.0" />
+      <ComboBox fx:id="bounceDropdown" layoutX="42.0" layoutY="64.0" onAction="#comboAction" prefHeight="25.0" prefWidth="123.0" />
+   </children>
+</Pane>

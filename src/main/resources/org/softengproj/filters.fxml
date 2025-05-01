@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.softengproj.uicontroller.FiltersController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Male" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Female" />
+         </children>
+         <HBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Range" />
+            <VBox spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="From:" />
+                  <DatePicker />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To:" />
+                  <DatePicker />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Context" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Shopping" />
+            <RadioButton mnemonicParsing="false" selected="true" text="News" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Social media" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Blog" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Hobbies" />
+            <RadioButton mnemonicParsing="false" selected="true" text="Travel" />
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
